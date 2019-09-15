@@ -10,13 +10,28 @@
     "from": "circuit-sat",
     "to": "cnf-sat",
     "type2": "many-one",
-    "text": "CLRS3, Theorem 34.9, page 1080."
+    "text": "CLRS ed3, Theorem 34.9, page 1080."
 },
 {
     "from": "cnf-sat",
     "to": "indset",
     "type2": "many-one",
     "text": "Algorithm Design, Kleinberg-Tardos, Theorem 8.8, page 460. (For every clause k, create i vertices if there are i variables in the clause. Draw an edge between all vertices of a clause and an edge between complementary vertices across clauses.)"
+},
+{
+    "from": "3-sat",
+    "to": "cnf-sat",
+    "type": "logspace",
+    "type2": "many-one",
+    "trivial": true,
+    "text": "A 3-CNF-SAT instance is also a CNF-SAT instance."
+},
+{
+    "from": "cnf-sat",
+    "to": "3-sat",
+    "type": "logspace",
+    "type2": "many-one",
+    "link": "https://cse.iitkgp.ac.in/~palash/2018AlgoDesignAnalysis/SAT-3SAT.pdf"
 },
 {
     "from": "indset",
@@ -34,5 +49,98 @@
     "type2": "many-one",
     "trivial": true,
     "text": "S is an independent set in graph G iff S is a clique in the complement of G."
+},
+{
+    "from": "vertex-cover",
+    "to": "set-cover",
+    "type2": "many-one",
+    "trivial": true,
+    "text": "For each vertex v, create the set Sv of all edges incident on v. If some of these sets span the set of edges, then the corresponding vertices form a vertex cover."
+},
+{
+    "from": "ham-cycle",
+    "to": "tsp",
+    "type": "logspace",
+    "type2": "many-one",
+    "trivial": true,
+    "text": "Given a graph G, construct a weighted graph G' where c(u, v) = 0 if (u, v) in G and c(u, v) = 1 otherwise. Then G' has a 0-weight tour iff G has a hamiltonian cycle."
+},
+{
+    "from": "3-sat",
+    "to": "subset-sum",
+    "type2": "many-one",
+    "text": "CLRS ed3, Theorem 34.15, page 1097."
+},
+{
+    "from": "set-cover",
+    "to": "ilp",
+    "type2": "many-one",
+    "text": "Represent the set cover instance as a linear program. Each set corresponds to a boolean variable and the requirement of covering each element becomes a linear constraint."
+},
+{
+    "from": "subset-sum",
+    "to": "partition",
+    "type2": "many-one",
+    "text": "CLRS ed3, Exercise 34.5-5, page 1101. See solutions by Bodnar and Lohr.",
+    "link": "https://sites.math.rutgers.edu/~ajl213/CLRS/Ch34.pdf"
+},
+{
+    "from": "ham-cycle",
+    "to": "ham-path",
+    "type2": "many-one",
+    "text": "CLRS ed3, Exercise 34.5-6, page 1101. See solutions by Bodnar and Lohr.",
+    "link": "https://sites.math.rutgers.edu/~ajl213/CLRS/Ch34.pdf"
+},
+{
+    "from": "subset-sum",
+    "to": "knapsack",
+    "type2": "many-one",
+    "text": "For every number x in the set, create an item of weight x and size x. If the target is t, get a knapsack of size t. A subset sums to t iff we can get profit ≥ t."
+},
+{
+    "from": "partition",
+    "to": "subset-sum",
+    "type2": "many-one",
+    "trivial": true,
+    "text": "Let s be the sum of set X. X can be partitioned into 2 subsets of equal sum iff there is a subset of X of sum s/2."
+},
+{
+    "from": "knapsack",
+    "to": "ilp",
+    "type2": "many-one",
+    "trivial": true
+},
+{
+    "from": "cnf-sat",
+    "to": "ilp",
+    "type2": "many-one",
+    "text": "Add a constraint for each clause. For example, '(u1 or !u2 or u3)' becomes 'u1 + (1-u2) + u3 ≥ 1'."
+},
+{
+    "from": "vertex-cover",
+    "to": "ham-cycle",
+    "text": "CLRS ed3, Theorem 34.13, page 1091."
+},
+{
+    "from": "3-sat",
+    "to": "3-color",
+    "text": "CLRS ed3, Problem 34.3, page 1103. See solutions by Bodnar and Lohr.",
+    "link": "https://sites.math.rutgers.edu/~ajl213/CLRS/Ch34.pdf"
+},
+{
+    "from": "3-sat",
+    "to": "d-ham-path",
+    "text": "Computational Complexity (internet draft), Arora and Barak, Theorem 2.18, page 52.",
+    "link": "https://theory.cs.princeton.edu/complexity/book.pdf"
+},
+{
+    "from": "partition",
+    "to": "makespan",
+    "text": "Let X be a set of integers with sum s. For each integer x, create a job which requires x units of time. Then X can be partitioned into 2 equal-sum subsets iff all these jobs can be finished in time ≤ s/2 on 2 processors."
+},
+{
+    "from": "partition",
+    "to": "bin-packing",
+    "text": "Let X be a set of integers with sum s. For each integer x, create an item of size x. Then X can be partitioned into 2 equal-sum subsets iff all these items can be packed in 2 bins."
 }
 ]

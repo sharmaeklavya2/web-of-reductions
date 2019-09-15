@@ -7,6 +7,10 @@
     "name": "CNF-SAT",
     "description": "Does a boolean formula in conjunctive normal form have a satisfying assignment?"
 },
+"3-sat": {
+    "name": "3-CNF-SAT",
+    "description": "Does a boolean formula in conjunctive normal form, where each clause has exactly 3 literals, have a satisfying assignment?"
+},
 "indset": {
     "name": "Independent Set",
     "description": "Is there a subset of size at least k of vertices of an undirected graph such that no 2 vertices in the subset have an edge between them in the graph?"
@@ -18,5 +22,53 @@
 "clique": {
     "name": "Clique",
     "description": "Does a graph have a complete subgraph of size k?"
+},
+"set-cover": {
+    "name": "Set Cover",
+    "description": "Given a set U and some of its subsets, are there k subsets whose union is U?"
+},
+"ham-cycle": {
+    "name": "Hamiltonian Cycle",
+    "description": "Given an undirected graph on n vertices, does it have a cycle of length n?"
+},
+"tsp": {
+    "name": "Travelling Salesman Problem",
+    "description": "Given a weighted complete graph, is there a hamiltonian cycle of weight at most w?"
+},
+"subset-sum": {
+    "name": "Subset Sum",
+    "description": "Given a set S of integers and an integer k, does a subset of S sum to k?"
+},
+"ilp": {
+    "name": "Integer Linear Programming",
+    "description": "Solving a linear program where the variables can only take integral values."
+},
+"partition": {
+    "name": "Set Partitioning Problem",
+    "description": "Given set of numbers, partition it into 2 subsets such that they both have the same sum."
+},
+"ham-path": {
+    "name": "Hamiltonian Path",
+    "description": "Given an undirected graph on n vertices, does it have a simple path of length n-1?"
+},
+"knapsack": {
+    "name": "Knapsack",
+    "description": "Given n items, each with a certain profit and size, and given a knapsack of limited capacity, can we pack a subset of items to get a profit ≥ P?"
+},
+"3-color": {
+    "name": "Graph 3-coloring",
+    "description": "Given a graph, is it possible to color each vertex with one of 3 colors so that no 2 adjacent vertices have the same color?"
+},
+"d-ham-path": {
+    "name": "Directed Hamiltonian Path",
+    "description": "Given a directed graph on n vertices, does it have a path of length n-1?"
+},
+"makespan": {
+    "name": "Makespan scheduling",
+    "description": "Given n jobs to run on k processors and the time required for each job, is it possible to finish all jobs in time ≤ T?"
+},
+"bin-packing": {
+    "name": "Bin Packing",
+    "description": "Given the size of n items, can they be packed in k bins of capacity C?"
 }
 }
