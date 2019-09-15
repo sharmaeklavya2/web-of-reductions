@@ -1,0 +1,15 @@
+[
+{
+    "from": "cnf-sat",
+    "to": "indset",
+    "type": "polytime",
+    "description": "For every clause k, create i vertices if there are i variables in the clause. Draw an edge between all vertices of a clause and an edge between complementary vertices across clauses."
+},
+{
+    "from": "indset",
+    "to": "vertex-cover",
+    "bidir": true,
+    "type": "polytime",
+    "description": "In a graph (V, E), if S is a vertex cover then V-S is an independent set."
+}
+]

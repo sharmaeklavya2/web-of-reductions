@@ -1,0 +1,9 @@
+digraph {
+    {%- for vertex in vertices %}
+    "{{vertex.id}}" [label="{{vertex.name}}"]
+    {%- endfor %}
+
+    {%- for edge in edges %}
+    "{{edge.from}}" -> "{{edge.to}}"{% if edge.bidir %} [dir=both]{% endif %}
+    {%- endfor %}
+}
