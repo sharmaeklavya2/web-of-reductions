@@ -1,17 +1,14 @@
-[
 {
-    "id": "cnf-sat",
+"cnf-sat": {
     "name": "CNF-SAT",
     "description": "Does a boolean formula in conjunctive normal form have a satisfying assignment?"
 },
-{
-    "id": "indset",
+"indset": {
     "name": "Independent Set",
     "description": "Is there a subset of size at least k of vertices of an undirected graph such that no 2 vertices in the subset have an edge between them in the graph?"
 },
-{
-    "id": "vertex-cover",
+"vertex-cover": {
     "name": "Vertex Cover",
     "description": "Is there a subset of size at most k of vertices of an undirected graph such that every edge has an endpoint in the subset?"
 }
-]
+}

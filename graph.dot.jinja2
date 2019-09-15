@@ -1,9 +1,9 @@
 digraph {
-    {%- for vertex in vertices %}
-    "{{vertex.id}}" [label="{{vertex.name}}"]
+    {%- for id, vertex in vertices.items() %}
+    "{{id}}" [label="{{vertex.name}}"]
     {%- endfor %}
 
     {%- for edge in edges %}
-    "{{edge.from}}" -> "{{edge.to}}"{% if edge.bidir %} [dir=both]{% endif %}
+    "{{edge.from.id}}" -> "{{edge.to.id}}" [label="[{{edge.id}}]" href="#edge.{{edge.id}}"{% if edge.bidir %} dir=both{% endif %}]
     {%- endfor %}
 }
