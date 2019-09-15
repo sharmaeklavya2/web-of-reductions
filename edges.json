@@ -3,16 +3,19 @@
     "from": "cnf-sat",
     "to": "circuit-sat",
     "trivial": true,
+    "type2": "many-one",
     "text": "Every CNF formula has an equivalent depth-2 circuit."
 },
 {
     "from": "circuit-sat",
     "to": "cnf-sat",
+    "type2": "many-one",
     "text": "CLRS3, Theorem 34.9, page 1080."
 },
 {
     "from": "cnf-sat",
     "to": "indset",
+    "type2": "many-one",
     "text": "Algorithm Design, Kleinberg-Tardos, Theorem 8.8, page 460. (For every clause k, create i vertices if there are i variables in the clause. Draw an edge between all vertices of a clause and an edge between complementary vertices across clauses.)"
 },
 {
