@@ -1,6 +1,8 @@
 digraph {
+    node [fontname="courier"]
+
     {%- for id, vertex in vertices.items() %}
-    "{{id}}" [label="{{vertex.name}}"]
+    "{{id}}"
     {%- endfor %}
 
     {%- for edge in edges %}
