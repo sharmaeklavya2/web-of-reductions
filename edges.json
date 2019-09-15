@@ -124,6 +124,7 @@
 {
     "from": "partition",
     "to": "bin-packing",
+    "type": "logspace",
     "text": "Let X be a set of integers with sum s. For each integer x, create an item of size x. Then X can be partitioned into 2 equal-sum subsets iff all these items can be packed in 2 bins."
 }
 ]
