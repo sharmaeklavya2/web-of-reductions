@@ -12,17 +12,18 @@ a {text-decoration: none; color: blue;}
 svg a text {fill: blue;}
 a:hover {text-decoration: underline;}
 li:target {background-color: rgba(0, 0, 0, 0.1);}
+.stmt {font-weight: bold;}
 </style>
 </head>
 <body>
 <h1> Web of Reductions </h1>
 {{svg}}
-<h2> References </h2>
+<h2> Reduction Proofs </h2>
 <ol>
 {% for edge in edges %}
 <li id="edge.{{edge.id}}" value="{{edge.id}}">
     {% if edge.link %}<a href="{{edge.link}}">{% endif %}
-{{edge.from.name}} {% if edge.bidir %}={% else %}≤{% endif %}<sub>{{edge.typechar}}</sub> {{edge.to.name}}{% if edge.text %}: {{edge.text}}{% endif %}
+<span class="stmt">{{edge.from.name}} {% if edge.bidir %}={% else %}≤{% endif %}<sub>{{edge.typechar}}</sub> {{edge.to.name}}</span>{% if edge.text %}: {{edge.text}}{% endif %}
     {% if edge.link %}</a>{% endif %}
 </li>
 {% endfor %}
