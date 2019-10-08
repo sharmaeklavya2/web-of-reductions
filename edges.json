@@ -132,5 +132,15 @@
     "to": "bin-packing",
     "type": "logspace",
     "text": "Let X be a set of integers with sum s. For each integer x, create an item of size x. Then X can be partitioned into 2 equal-sum subsets iff all these items can be packed in 2 bins."
+},
+{
+    "from": "d-ham-cycle",
+    "to": "ham-cycle",
+    "text": "For every vertex v in directed graph, create vertices v1, v2, v3 in undirected graph. For every edge (u, v) in directed graph, add edge (u3, v1) in undirected graph. Directed graph has ham-cycle iff undirected graph has ham-cycle."
+},
+{
+    "from": "ham-cycle",
+    "to": "d-ham-cycle",
+    "text": "Replace every undirected edge {u, v} by 2 directed edges (u, v) and (v, u). Directed graph has ham-cycle iff undirected graph has ham-cycle"
 }
 ]
