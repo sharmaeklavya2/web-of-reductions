@@ -142,5 +142,16 @@
     "from": "ham-cycle",
     "to": "d-ham-cycle",
     "text": "Replace every undirected edge {u, v} by 2 directed edges (u, v) and (v, u). Directed graph has ham-cycle iff undirected graph has ham-cycle"
+},
+{
+    "from": "best-partition",
+    "to": "partition",
+    "text": "CLRS ed3, Problem 34-2 d, page 1102. See solutions by Bodnar and Lohr.",
+    "link": "https://sites.math.rutgers.edu/~ajl213/CLRS/Ch34.pdf"
+},
+{
+    "from": "partition",
+    "to": "best-partition",
+    "text": "A partition instance is a best-partition instance with difference 0."
 }
 ]

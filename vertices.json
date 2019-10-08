@@ -44,8 +44,12 @@
     "description": "Solving a linear program where the variables can only take integral values."
 },
 "partition": {
-    "name": "Set Partitioning Problem",
+    "name": "Set Partitioning",
     "description": "Given set of numbers, partition it into 2 subsets such that they both have the same sum."
+},
+"best-partition": {
+    "name": "Best Set Partitioning",
+    "description": "Given set of numbers, partition it into 2 subsets such that the difference between their sums is at most d."
 },
 "ham-path": {
     "name": "Hamiltonian Path",
