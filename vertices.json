@@ -63,6 +63,10 @@
     "name": "Directed Hamiltonian Path",
     "description": "Given a directed graph on n vertices, does it have a path of length n-1?"
 },
+"d-ham-cycle": {
+    "name": "Directed Hamiltonian Cycle",
+    "description": "Given a directed graph on n vertices, does it have a cycle of length n?"
+},
 "makespan": {
     "name": "Makespan scheduling",
     "description": "Given n jobs to run on k processors and the time required for each job, is it possible to finish all jobs in time ≤ T?"

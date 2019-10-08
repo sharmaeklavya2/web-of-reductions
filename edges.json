@@ -117,6 +117,12 @@
     "link": "https://theory.cs.princeton.edu/complexity/book.pdf"
 },
 {
+    "from": "3-sat",
+    "to": "d-ham-cycle",
+    "text": "Computational Complexity (internet draft), Arora and Barak, Theorem 2.18 (page 52) shows a polytime reduction from 3-sat to directed hamiltonian path. In the directed graph constructed there, add an edge from the end vertex to the start vertex.",
+    "link": "https://theory.cs.princeton.edu/complexity/book.pdf"
+},
+{
     "from": "partition",
     "to": "makespan",
     "text": "Let X be a set of integers with sum s. For each integer x, create a job which requires x units of time. Then X can be partitioned into 2 equal-sum subsets iff all these jobs can be finished in time ≤ s/2 on 2 processors."
