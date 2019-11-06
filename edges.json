@@ -153,5 +153,10 @@
     "from": "partition",
     "to": "best-partition",
     "text": "A partition instance is a best-partition instance with difference 0."
+},
+{
+    "from": "indset",
+    "to": "max-cut",
+    "link": "https://people.engr.ncsu.edu/mfms/Teaching/CSC505/wrap/Lectures/week14.pdf"
 }
 ]

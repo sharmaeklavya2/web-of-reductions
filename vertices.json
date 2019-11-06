@@ -78,5 +78,9 @@
 "bin-packing": {
     "name": "Bin Packing",
     "description": "Given the size of n items, can they be packed in k bins of capacity C?"
+},
+"max-cut": {
+    "name": "Max cut",
+    "description": "Given a graph G = (V, E), find a partitioning (S, V-S) such that E∩(S×(V-S)) is maximized."
 }
 }
