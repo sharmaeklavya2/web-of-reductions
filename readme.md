@@ -1,5 +1,7 @@
 # Web of Reductions
 
+**Update**: This repository has been superseded by [sharmaeklavya2/graph-with-comments](https://github.com/sharmaeklavya2/graph-with-comments).
+
 A script which generates a directed graph where vertices are problems
 and there is an edge from problem A to problem B iff A reduces to B
 in polynomial time (or logarithmic space).
